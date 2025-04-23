@@ -1,4 +1,4 @@
-package com.testapprn
+package com.anonymous.TestApp_RN
 
 import android.os.Build
 import android.os.Bundle

@@ -1,4 +1,4 @@
-package com.testapprn
+package com.anonymous.TestApp_RN
 
 import android.app.Application
 import android.content.res.Configuration
