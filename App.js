@@ -67,7 +67,7 @@ const App = () => {
     <SafeAreaView style={styles.container}>
       {/* Top App Bar */}
       <View style={styles.topBar}>
-        <Text style={styles.title}>App 타이틀</Text>
+        <Text style={styles.title}>React Native Test App</Text>
         <View style={styles.tabBar}>
           {topTabs.map((tab, index) => (
             <TouchableOpacity

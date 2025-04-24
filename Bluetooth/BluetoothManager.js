@@ -318,6 +318,7 @@ export const useBluetoothManager = () => {
       // 데이터를 Base64로 인코딩
       const encodedData = base64.encode(data);
       
+      addLog(`보낸 데이터 : ${data}`);
       // 데이터 쓰기 (응답 여부에 따라 다른 메서드 사용)
       if (characteristic.isWritableWithResponse) {
         await characteristic.writeWithResponse(encodedData);
@@ -328,7 +329,7 @@ export const useBluetoothManager = () => {
       addLog(`데이터 전송 성공: ${data}`);
       return true;
     } catch (error) {
-      addLog(`데이터 전송 오류: ${error.message}`);
+      //  addLog(`데이터 전송 오류: ${error.message}`);
       return false;
     }
   };
